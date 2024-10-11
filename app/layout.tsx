@@ -21,9 +21,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  profile
 }: Readonly<{
   children: React.ReactNode;
+  profile: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body
@@ -36,6 +39,7 @@ export default function RootLayout({
             </ul>
           </nav>
         {children}
+
       </body>
     </html>
   );

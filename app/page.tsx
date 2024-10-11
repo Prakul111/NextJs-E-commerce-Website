@@ -1,9 +1,12 @@
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+    const data = await fetch("https://jsonplaceholder.tyicode/todo")
+    const todo = await data.json()
+    console.log(todo)
   return (
     <main>
-      <h1>Welcome to NextJs</h1>
+      <h1>{todo.title}</h1>
       <Image 
       src="/vercel.svg"
       alt="Vercel Logo"
@@ -11,5 +14,5 @@ export default function Home() {
       height={16}
       />
     </main>
-  );
+  )
 }
