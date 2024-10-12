@@ -11,3 +11,12 @@ export function middleware(request: NextResponse){
 export const config = {
     matcher: '/about:path*',
 }
+
+
+
+
+
+
+
+
+
