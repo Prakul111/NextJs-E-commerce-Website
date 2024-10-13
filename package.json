@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate:postgresql --config drizzle.config.tz",
+    "db:push": "drizzle-kit push:postgresql --config drizzle.config.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.1",
