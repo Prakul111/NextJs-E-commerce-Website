@@ -15,6 +15,13 @@
       "when": 1728995675763,
       "tag": "0001_redundant_randall_flagg",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1729164265373,
+      "tag": "0002_polite_the_enforcers",
+      "breakpoints": true
     }
   ]
 }
